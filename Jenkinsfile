@@ -18,7 +18,7 @@ pipeline {
      
     //Run the playbook
     stage('RunPlaybook') {
-      steps {d75556aa-deb3-4ef3-aaad-a0b33a1f9b5c
+      steps {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
         sh "ansible-playbook -i inventory/walmart.hosts --private-key=$AWS_EC2_PRIVATE_KEY playbooks/installTomcat.yml --ssh-common-args='-o StrictHostKeyChecking=no'"
       }
     }
